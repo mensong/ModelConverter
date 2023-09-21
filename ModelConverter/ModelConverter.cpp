@@ -37,7 +37,7 @@ int main(int argc, char** argv)
 {
     if (argc != 4)
     {
-        std::cout << argv[0] << " 输入文件路径 输出类型名 输出文件路径\n";
+        std::cout << "Usage:" << argv[0] << " 输入文件路径 输出类型名 输出文件路径\n";
         std::cout << "输出类型名:"
             "collada"
             ",x"
