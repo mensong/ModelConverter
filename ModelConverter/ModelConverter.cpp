@@ -42,6 +42,7 @@ int main(int argc, char** argv)
         std::cout << "Usage:" << argv[0] << " 输入文件路径 输出类型名 输出文件路径\n";
         std::cout << "输出类型名:" << std::endl;
 
+        std::cout << "Type "<< "\t\tExtension" << "\t\tDescription" << std::endl;
         size_t formatCount = mAiExporter.GetExportFormatCount();
         for (size_t i = 0; i < formatCount; i++)
         {
@@ -49,7 +50,7 @@ int main(int argc, char** argv)
             std::string sId = fd->id;
             std::string sExt = fd->fileExtension;
             std::string sDesc = fd->description;
-            std::cout << "Type: " << sId << "\tExtension: ." << sExt << "\t\tDescription: " << sDesc << std::endl;
+            std::cout << sId << "\t\t." << sExt << "\t\t" << sDesc << std::endl;
         }
 
         return 1;
