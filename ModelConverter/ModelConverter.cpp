@@ -6,31 +6,31 @@
 #include <assimp/Importer.hpp>
 
 /*
-类型名,     描述,                                           文件后缀
-"collada",  "COLLADA - Digital Asset Exchange Schema",      ".dae"
-"x",        "X Files",                                      ".x"
-"stp",      "Step Files",                                   ".stp"
-"obj",      "Wavefront OBJ format",                         ".obj"
-"objnomtl", "Wavefront OBJ format without material file",   ".obj"
-"stl",      "Stereolithography",                            ".stl"
-"stlb",     "Stereolithography (binary)",                   ".stl"
-"ply",      "Stanford Polygon Library",                     ".ply"
-"plyb",     "Stanford Polygon Library (binary)",            ".ply"
-"3ds",      "Autodesk 3DS (legacy)",                        ".3ds"
-"gltf2",    "GL Transmission Format v. 2",                  ".gltf"
-"glb2",     "GL Transmission Format v. 2 (binary)",         ".glb"
-"gltf",     "GL Transmission Format",                       ".gltf"
-"glb",      "GL Transmission Format (binary)",              ".glb"
-"assbin",   "Assimp Binary File",                           ".assbin"
-"assxml",   "Assimp XML Document",                          ".assxml"
-"x3d",      "Extensible 3D",                                ".x3d"
-"fbx",      "Autodesk FBX (binary)",                        ".fbx"
-"fbxa",     "Autodesk FBX (ascii)",                         ".fbx"
-"m3d",      "Model 3D (binary)",                            ".m3d"
-"m3da",     "Model 3D (ascii)",                             ".a3d"
-"3mf",      "The 3MF-File-Format",                          ".3mf"
-"pbrt",     "pbrt-v4 scene description file",               ".pbrt"
-"assjson",  "Assimp JSON Document",                         ".json"
+类型名           文件后缀                  描述                                           
+"collada"        ".dae"                    "COLLADA - Digital Asset Exchange Schema"      
+"x"              ".x"                      "X Files"                                      
+"stp"            ".stp"                    "Step Files"                                   
+"obj"            ".obj"                    "Wavefront OBJ format"                         
+"objnomtl"       ".obj"                    "Wavefront OBJ format without material file"   
+"stl"            ".stl"                    "Stereolithography"                            
+"stlb"           ".stl"                    "Stereolithography (binary)"                   
+"ply"            ".ply"                    "Stanford Polygon Library"                     
+"plyb"           ".ply"                    "Stanford Polygon Library (binary)"            
+"3ds"            ".3ds"                    "Autodesk 3DS (legacy)"                        
+"gltf2"          ".gltf"                   "GL Transmission Format v. 2"                  
+"glb2"           ".glb"                    "GL Transmission Format v. 2 (binary)"         
+"gltf"           ".gltf"                   "GL Transmission Format"                       
+"glb"            ".glb"                    "GL Transmission Format (binary)"              
+"assbin"         ".assbin"                 "Assimp Binary File"                           
+"assxml"         ".assxml"                 "Assimp XML Document"                          
+"x3d"            ".x3d"                    "Extensible 3D"                                
+"fbx"            ".fbx"                    "Autodesk FBX (binary)"                        
+"fbxa"           ".fbx"                    "Autodesk FBX (ascii)"                         
+"m3d"            ".m3d"                    "Model 3D (binary)"                            
+"m3da"           ".a3d"                    "Model 3D (ascii)"                             
+"3mf"            ".3mf"                    "The 3MF-File-Format"                          
+"pbrt"           ".pbrt"                   "pbrt-v4 scene description file"               
+"assjson"        ".json"                   "Assimp JSON Document"                         
 */
 
 int main(int argc, char** argv)
@@ -40,9 +40,8 @@ int main(int argc, char** argv)
     if (argc != 4)
     {
         std::cout << "Usage:" << argv[0] << " 输入文件路径 输出类型名 输出文件路径\n";
-        std::cout << "输出类型名:" << std::endl;
 
-        std::cout << "Type "<< "\t\tExtension" << "\t\tDescription" << std::endl;
+        std::cout << "类型名"<< "\t\t文件后缀" << "\t\t描述" << std::endl;
         size_t formatCount = mAiExporter.GetExportFormatCount();
         for (size_t i = 0; i < formatCount; i++)
         {
