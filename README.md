@@ -5,6 +5,6 @@ Supported file type:collada,x,stp,obj,objnomtlstl,stlb,ply,plyb,3ds,gltf2,glb2,g
 # Build
 1.unzip Assimp/lib.zip
 
-2.Use vs2022 open then ModelConverter.sln
+2.Use vs2022 open the ModelConverter.sln
 # Usage
 ModelConverter.exe "srcFilePath" "targetFilePath" 
